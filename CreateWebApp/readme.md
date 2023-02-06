@@ -49,3 +49,20 @@ az deployment group create --name DeployLinkedTemplate --resource-group myResour
 
 ```
 
+
+
+#### AzureDevOps
+https://learn.microsoft.com/ja-jp/azure/azure-resource-manager/templates/deployment-tutorial-pipeline
+1. CreateOrg
+2. CreateProject
+3. Piplines
+   1. Piplines
+      1. Create Pipline
+      2. Connect
+         1. GitHub
+
+
+
+
+
+https://qiita.com/Hachiyou-Renge/items/2083f2ce9e8b38558805
