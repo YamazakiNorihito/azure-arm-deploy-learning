@@ -5,12 +5,6 @@
     "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
     "contentVersion": "1.0.0.0",
     "parameters": {
-        "storageAccountName": {
-            "type": "string",
-            "metadata": {
-                "description": "Specify the storage account name."
-            }
-        },
         "location": {
             "type": "string",
             "metadata": {
@@ -44,7 +38,7 @@
             "sku": {
                 "name": "[parameters('storageSKU')]"
             },
-            "kind": "[parameters('storageAccountName')]",
+            "kind": "StorageV2",
             "copy": {
                 "name": "storageCopy",
                 "count": 3
@@ -55,9 +49,5 @@
         }
     ],
     "outputs": {
-        "storageEndpoint": {
-            "type": "object",
-            "value": "[reference(parameters('storageAccountName')).primaryEndpoints]"
-        }
     }
 }
