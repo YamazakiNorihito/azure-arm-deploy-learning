@@ -20,6 +20,6 @@ steps:
     location: 'Japan East'
     templateLocation: 'URL of the file'
     csmFileLink: 'https://raw.githubusercontent.com/YamazakiNorihito/azure-arm-deploy-learning/main/CreateWebApp/azuredeploy.json'
-    overrideParameters: '-projectName arm-learn'
+    overrideParameters: '-projectName jln01'
     deploymentMode: 'Incremental'
     deploymentName: 'DeployPipelineTemplate'
